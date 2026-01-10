@@ -39,6 +39,8 @@
     published_ports: '{{ traefik_ports }}'
     volumes: '{{ traefik_volumes + traefik_add_volumes }}'
     labels: '{{ traefik_labels }}'
+    env: '{{ traefik_container_env }}'
+    dns_servers: '{{ traefik_container_dns }}'
     command:
       - '--configFile=/etc/traefik/traefik.yml'
     networks:
