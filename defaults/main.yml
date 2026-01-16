@@ -39,7 +39,9 @@ traefik_ports:
   - '443:443'
 traefik_labels: {}
 traefik_container_env: {}
-traefik_container_dns: []
+traefik_container_dns:
+  - 1.1.1.1
+  - 8.8.8.8
 
 # traefik_confkey_global: {}
 # traefik_confkey_serversTransport: {}
